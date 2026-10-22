@@ -1,91 +1,142 @@
 <!DOCTYPE html>
-<html dir="rtl" lang="ar">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>سياسة الخصوصية - تطبيق تأويل</title>
+    <title>سياسة الخصوصية | Privacy Policy - Roya</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             line-height: 1.6;
             margin: 20px;
-            background-color: #f5f5f5;
+            background-color: #121212;
+            color: #E0E0E0;
         }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #2c3e50;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        h2 {
-            color: #34495e;
-            margin-top: 25px;
-        }
-        p {
-            margin-bottom: 15px;
-        }
+        h1 { color: #D4AF37; text-align: center; }
+        h2 { color: #D4AF37; border-bottom: 1px solid #444; padding-bottom: 5px; }
+        p, ul { text-align: justify; }
+        ul { padding-right: 20px; }
+        li { margin-bottom: 10px; }
+        a { color: #D4AF37; }
+        .container { max-width: 800px; margin: auto; padding: 15px; }
+        .meta { text-align: center; color: #9E9E9E; }
+        .en { direction: ltr; text-align: left; }
+        .en ul { padding-right: 0; padding-left: 20px; }
+        hr { border: 0; border-top: 1px solid #444; margin: 40px 0; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>سياسة الخصوصية</h1>
-        
-        <h2>مقدمة</h2>
-        <p>نحن في تطبيق تأويل نقدر خصوصيتك ونلتزم بحمايتها. تشرح هذه السياسة كيفية جمعنا واستخدامنا للمعلومات.</p>
+<div class="container">
+    <h1>سياسة الخصوصية لتطبيق «رؤيا»</h1>
+    <p class="meta">آخر تحديث: 21 أكتوبر 2026 · المطوّر: Soul Serenity Zone (المغرب) · للتواصل: <a href="mailto:87yassine1@gmail.com">87yassine1@gmail.com</a></p>
+    <p class="meta"><a href="#en">English version below</a></p>
 
-        <h2>المعلومات التي نجمعها</h2>
-        <p>يجمع تطبيق تأويل الحد الأدنى من المعلومات الضرورية لتقديم خدمة تفسير الأحلام:</p>
+    <h2>إخلاء مسؤولية</h2>
+    <p>يقدّم التطبيق تأويلاً تقريبيًا واجتهاديًا للرؤى بمساعدة الذكاء الاصطناعي، ولا يُعد حكمًا شرعيًا قطعيًا أو علمًا بالغيب أو استشارة نفسية أو طبية، والله تعالى أعلم.</p>
+
+    <h2>1. البيانات التي تدخلها أنت</h2>
+    <ul>
+        <li><strong>نص الرؤيا:</strong> يُرسل عبر اتصال مشفّر إلى خدمة OpenAI لتوليد التأويل. لا نرسل معه اسمك أو بريدك. تحتفظ OpenAI بالطلبات مدة أقصاها 30 يومًا لمكافحة إساءة الاستخدام، ولا تستعملها لتدريب نماذجها حسب شروطها للـAPI.</li>
+        <li><strong>الإدخال الصوتي:</strong> عند الضغط على زر الميكروفون فقط، تحوّل خدمة التعرف على الكلام في جهازك (مثل Google) صوتك إلى نص. التطبيق يستلم النص فقط ولا يحفظ التسجيل الصوتي.</li>
+        <li><strong>الحساب (اختياري):</strong> إذا سجّلت، نحفظ اسمك وبريدك وجنسك وفئتك العمرية في Firebase (Google)، وتُدار كلمة المرور عبر Firebase Authentication ولا نراها. يمكنك استعمال التطبيق دون حساب.</li>
+    </ul>
+
+    <h2>2. البيانات المحفوظة على جهازك فقط</h2>
+    <p>سجل الأحلام (النص، التأويل، المزاج، ملف الصوت المولّد) والإعدادات تبقى على جهازك ولا تُرفع إلى خوادمنا. قد تدخل ضمن نسخة Android الاحتياطية الخاصة بحساب Google إذا كانت مفعّلة لديك.</p>
+
+    <h2>3. بيانات تُجمع تلقائيًا</h2>
+    <ul>
+        <li><strong>Firebase Analytics:</strong> أحداث استخدام مثل نوع المفسّر والمزاج واللغة وطول النص، دون نص الرؤيا نفسه.</li>
+        <li><strong>Firebase Crashlytics وPerformance Monitoring:</strong> تقارير الأعطال ومعلومات الجهاز والأداء.</li>
+        <li><strong>Firebase Remote Config:</strong> لجلب إعدادات المفسّر.</li>
+        <li><strong>Google AdMob:</strong> معرّف الإعلانات، عنوان IP (موقع تقريبي)، التفاعل مع الإعلانات، ومعلومات تشخيصية، لعرض الإعلانات وقياسها ومنع الاحتيال. نص رؤياك لا يُرسل إلى AdMob أبدًا.</li>
+    </ul>
+
+    <h2>4. مع من نشارك البيانات</h2>
+    <p>لا نبيع بياناتك. نستعمل فقط مزودي الخدمة المذكورين أعلاه: OpenAI (<a href="https://openai.com/policies/privacy-policy">سياستها</a>)، وGoogle Firebase وAdMob (<a href="https://policies.google.com/privacy">سياسة Google</a>). قد نكشف البيانات إذا فرض ذلك القانون.</p>
+
+    <h2>5. الإعلانات والموافقة</h2>
+    <p>يعرض التطبيق إعلانات. في المناطق التي تشترط الموافقة (مثل الاتحاد الأوروبي) نطلب موافقتك قبل الإعلانات المخصّصة. يمكنك إعادة تعيين معرّف الإعلانات أو حذفه من إعدادات هاتفك ← Google ← الإعلانات.</p>
+
+    <h2>6. الأذونات</h2>
+    <ul>
+        <li><strong>الميكروفون:</strong> للإدخال الصوتي فقط وبطلب منك.</li>
+        <li><strong>الإشعارات:</strong> لتذكير تسجيل الرؤيا، ويمكن إيقافها من إعدادات الهاتف.</li>
+        <li><strong>الإنترنت:</strong> للتأويل والإعلانات والخدمات المذكورة.</li>
+    </ul>
+
+    <h2>7. الأمان ومدة الاحتفاظ</h2>
+    <p>كل الاتصالات مشفّرة (HTTPS). نحتفظ ببيانات الحساب حتى تحذفه. تحتفظ Google ببيانات Analytics وCrashlytics حسب فتراتها الافتراضية.</p>
+
+    <h2>8. حقوقك وحذف بياناتك</h2>
+    <ul>
+        <li><strong>حذف سجل الأحلام:</strong> من القائمة ← «حذف كل الأحلام»، أو بحذف بيانات التطبيق أو إزالته.</li>
+        <li><strong>حذف الحساب:</strong> من القائمة ← «حذف الحساب»، أو عبر <a href="https://freegesh87.github.io/taawil-privacy-policy/delete-account.html">صفحة حذف الحساب</a>، أو بمراسلتنا. نحذف بياناتك خلال 30 يومًا.</li>
+        <li>يمكنك أيضًا طلب نسخة من بيانات حسابك أو تصحيحها عبر البريد.</li>
+    </ul>
+
+    <h2>9. الأطفال</h2>
+    <p>التطبيق غير موجّه لمن هم دون 13 سنة، ولا نجمع بياناتهم عن قصد.</p>
+
+    <h2>10. التغييرات</h2>
+    <p>سننشر أي تعديل على هذه الصفحة مع تاريخ التحديث.</p>
+
+    <hr>
+
+    <div class="en" id="en" lang="en" dir="ltr">
+        <h1>Roya Privacy Policy</h1>
+        <p class="meta">Last updated: October 21, 2026 · Developer: Soul Serenity Zone (Morocco) · Contact: <a href="mailto:87yassine1@gmail.com">87yassine1@gmail.com</a></p>
+
+        <h2>Disclaimer</h2>
+        <p>Roya offers approximate, AI-assisted dream interpretations. They are not religious rulings, knowledge of the unseen, or psychological or medical advice.</p>
+
+        <h2>1. Data you enter</h2>
         <ul>
-            <li>نص الحلم الذي تدخله للتفسير</li>
-            <li>نوع التفسير المطلوب (ديني/نفسي)</li>
-            <li>معلومات تقنية أساسية عن جهازك لتحسين أداء التطبيق</li>
+            <li><strong>Dream text:</strong> sent over an encrypted connection to OpenAI to generate the interpretation. We do not send your name or email with it. OpenAI keeps API requests for up to 30 days for abuse monitoring and, under its API terms, does not use them to train its models.</li>
+            <li><strong>Voice input:</strong> only when you tap the microphone, your device's speech recognition service (such as Google) turns your voice into text. The app receives the text only and does not store the audio.</li>
+            <li><strong>Account (optional):</strong> if you register, we store your name, email, gender and age group in Firebase (Google). Your password is handled by Firebase Authentication and we never see it. You can use the app without an account.</li>
         </ul>
 
-        <h2>كيف نستخدم معلوماتك</h2>
-        <p>نستخدم المعلومات التي نجمعها لـ:</p>
+        <h2>2. Data kept on your device only</h2>
+        <p>Your dream journal (text, interpretation, mood, generated audio) and settings stay on your device and are not uploaded to our servers. They may be included in your Google account's Android backup if you have it enabled.</p>
+
+        <h2>3. Data collected automatically</h2>
         <ul>
-            <li>تقديم خدمة تفسير الأحلام</li>
-            <li>تحسين جودة التفسيرات</li>
-            <li>تحسين أداء وواجهة التطبيق</li>
-            <li>عرض إعلانات مناسبة</li>
+            <li><strong>Firebase Analytics:</strong> usage events such as interpreter type, mood, language and text length, never the dream text itself.</li>
+            <li><strong>Firebase Crashlytics and Performance Monitoring:</strong> crash reports, device and performance information.</li>
+            <li><strong>Firebase Remote Config:</strong> to fetch interpreter settings.</li>
+            <li><strong>Google AdMob:</strong> advertising ID, IP address (approximate location), ad interactions and diagnostics, to show and measure ads and prevent fraud. Your dream text is never sent to AdMob.</li>
         </ul>
 
-        <h2>الإعلانات</h2>
-        <p>يستخدم التطبيق خدمة Google AdMob لعرض الإعلانات. قد تجمع AdMob بعض المعلومات لتقديم إعلانات مناسبة. يمكنك الاطلاع على سياسة خصوصية Google لمزيد من المعلومات.</p>
+        <h2>4. Who we share data with</h2>
+        <p>We do not sell your data. We only use the service providers listed above: OpenAI (<a href="https://openai.com/policies/privacy-policy">privacy policy</a>) and Google Firebase and AdMob (<a href="https://policies.google.com/privacy">Google privacy policy</a>). We may disclose data when required by law.</p>
 
-        <h2>حماية المعلومات</h2>
-        <p>نحن نتخذ إجراءات أمنية مناسبة لحماية معلوماتك من الوصول أو الاستخدام غير المصرح به.</p>
+        <h2>5. Ads and consent</h2>
+        <p>The app shows ads. Where consent is required (for example in the EU and UK) we ask for it before showing personalized ads. You can reset or delete your advertising ID in your phone's Settings → Google → Ads.</p>
 
-        <h2>مشاركة المعلومات</h2>
-        <p>لا نشارك معلوماتك الشخصية مع أي طرف ثالث إلا في الحالات التالية:</p>
+        <h2>6. Permissions</h2>
         <ul>
-            <li>عندما يكون ذلك ضرورياً لتقديم الخدمة</li>
-            <li>عندما يكون ذلك مطلوباً قانونياً</li>
+            <li><strong>Microphone:</strong> for voice input only, when you ask for it.</li>
+            <li><strong>Notifications:</strong> for dream journaling reminders; you can turn them off in your phone settings.</li>
+            <li><strong>Internet:</strong> for interpretations, ads and the services above.</li>
         </ul>
 
-        <h2>حقوقك</h2>
-        <p>لديك الحق في:</p>
+        <h2>7. Security and retention</h2>
+        <p>All connections are encrypted (HTTPS). We keep account data until you delete it. Google keeps Analytics and Crashlytics data according to its default retention periods.</p>
+
+        <h2>8. Your rights and deleting your data</h2>
         <ul>
-            <li>الوصول إلى معلوماتك</li>
-            <li>طلب حذف معلوماتك</li>
-            <li>الاعتراض على معالجة معلوماتك</li>
+            <li><strong>Delete your dream journal:</strong> Menu → "Delete all dreams", or clear the app's data or uninstall it.</li>
+            <li><strong>Delete your account:</strong> Menu → "Delete account", via the <a href="https://freegesh87.github.io/taawil-privacy-policy/delete-account.html">account deletion page</a>, or by emailing us. We delete your data within 30 days.</li>
+            <li>You can also ask for a copy of your account data or a correction by email.</li>
         </ul>
 
-        <h2>التواصل معنا</h2>
-        <p>إذا كان لديك أي أسئلة حول سياسة الخصوصية، يمكنك التواصل معنا عبر:</p>
-        <p>البريد الإلكتروني: 87YASSINE1@GMAIL.COM</p>
+        <h2>9. Children</h2>
+        <p>Roya is not directed at children under 13 and we do not knowingly collect their data.</p>
 
-        <h2>التغييرات في سياسة الخصوصية</h2>
-        <p>قد نقوم بتحديث سياسة الخصوصية من وقت لآخر. سنقوم بإخطارك بأي تغييرات جوهرية عبر التطبيق.</p>
-
-        <p style="text-align: center; margin-top: 30px;">آخر تحديث: 20 يناير 2025</p>
+        <h2>10. Changes</h2>
+        <p>We will post any changes on this page with the update date.</p>
     </div>
+</div>
 </body>
 </html>
