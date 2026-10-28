@@ -28,7 +28,7 @@
 <body>
 <div class="container">
     <h1>سياسة الخصوصية لتطبيق «رؤيا»</h1>
-    <p class="meta">آخر تحديث: 21 أكتوبر 2026 · المطوّر: Soul Serenity Zone (المغرب) · للتواصل: <a href="mailto:87yassine1@gmail.com">87yassine1@gmail.com</a></p>
+    <p class="meta">آخر تحديث: 28 أكتوبر 2026 · المطوّر: Soul Serenity Zone (المغرب) · للتواصل: <a href="mailto:87yassine1@gmail.com">87yassine1@gmail.com</a></p>
     <p class="meta"><a href="#en">English version below</a></p>
 
     <h2>إخلاء مسؤولية</h2>
@@ -36,7 +36,7 @@
 
     <h2>1. البيانات التي تدخلها أنت</h2>
     <ul>
-        <li><strong>نص الرؤيا:</strong> يُرسل عبر اتصال مشفّر إلى خدمة OpenAI لتوليد التأويل. لا نرسل معه اسمك أو بريدك. تحتفظ OpenAI بالطلبات مدة أقصاها 30 يومًا لمكافحة إساءة الاستخدام، ولا تستعملها لتدريب نماذجها حسب شروطها للـAPI.</li>
+        <li><strong>نص الرؤيا:</strong> يُرسل عبر اتصال مشفّر إلى خادمنا (Cloudflare Workers) الذي يمرّره مباشرة إلى خدمة OpenAI لتوليد التأويل، ولا يحفظه الخادم. لا نرسل معه اسمك أو بريدك. تحتفظ OpenAI بالطلبات مدة أقصاها 30 يومًا لمكافحة إساءة الاستخدام، ولا تستعملها لتدريب نماذجها حسب شروطها للـAPI.</li>
         <li><strong>الإدخال الصوتي:</strong> عند الضغط على زر الميكروفون فقط، تحوّل خدمة التعرف على الكلام في جهازك (مثل Google) صوتك إلى نص. التطبيق يستلم النص فقط ولا يحفظ التسجيل الصوتي.</li>
         <li><strong>الحساب (اختياري):</strong> إذا سجّلت، نحفظ اسمك وبريدك وجنسك وفئتك العمرية في Firebase (Google)، وتُدار كلمة المرور عبر Firebase Authentication ولا نراها. يمكنك استعمال التطبيق دون حساب.</li>
     </ul>
@@ -49,11 +49,12 @@
         <li><strong>Firebase Analytics:</strong> أحداث استخدام مثل نوع المفسّر والمزاج واللغة وطول النص، دون نص الرؤيا نفسه.</li>
         <li><strong>Firebase Crashlytics وPerformance Monitoring:</strong> تقارير الأعطال ومعلومات الجهاز والأداء.</li>
         <li><strong>Firebase Remote Config:</strong> لجلب إعدادات المفسّر.</li>
+        <li><strong>معرّف الجهاز المشفّر:</strong> يرسل التطبيق إلى خادمنا رمزًا مشتقًا من معرّف الجهاز (Android ID) بعد تشفيره بدالة SHA-256، فلا يمكن الرجوع منه إلى المعرّف الأصلي. نحفظ معه فقط عدد التأويلات المستعملة في اليوم والرصيد المكتسب من مشاهدة الإعلانات، لتطبيق الحد اليومي المجاني ومنع إساءة الاستخدام. نتحقق أيضًا عبر Firebase App Check (Play Integrity) من أن الطلب صادر عن التطبيق الأصلي.</li>
         <li><strong>Google AdMob:</strong> معرّف الإعلانات، عنوان IP (موقع تقريبي)، التفاعل مع الإعلانات، ومعلومات تشخيصية، لعرض الإعلانات وقياسها ومنع الاحتيال. نص رؤياك لا يُرسل إلى AdMob أبدًا.</li>
     </ul>
 
     <h2>4. مع من نشارك البيانات</h2>
-    <p>لا نبيع بياناتك. نستعمل فقط مزودي الخدمة المذكورين أعلاه: OpenAI (<a href="https://openai.com/policies/privacy-policy">سياستها</a>)، وGoogle Firebase وAdMob (<a href="https://policies.google.com/privacy">سياسة Google</a>). قد نكشف البيانات إذا فرض ذلك القانون.</p>
+    <p>لا نبيع بياناتك. نستعمل فقط مزودي الخدمة المذكورين أعلاه: OpenAI (<a href="https://openai.com/policies/privacy-policy">سياستها</a>)، وCloudflare لاستضافة خادمنا (<a href="https://www.cloudflare.com/privacypolicy/">سياستها</a>)، وGoogle Firebase وAdMob (<a href="https://policies.google.com/privacy">سياسة Google</a>). قد نكشف البيانات إذا فرض ذلك القانون.</p>
 
     <h2>5. الإعلانات والموافقة</h2>
     <p>يعرض التطبيق إعلانات. في المناطق التي تشترط الموافقة (مثل الاتحاد الأوروبي) نطلب موافقتك قبل الإعلانات المخصّصة. يمكنك إعادة تعيين معرّف الإعلانات أو حذفه من إعدادات هاتفك ← Google ← الإعلانات.</p>
@@ -85,14 +86,14 @@
 
     <div class="en" id="en" lang="en" dir="ltr">
         <h1>Roya Privacy Policy</h1>
-        <p class="meta">Last updated: October 21, 2026 · Developer: Soul Serenity Zone (Morocco) · Contact: <a href="mailto:87yassine1@gmail.com">87yassine1@gmail.com</a></p>
+        <p class="meta">Last updated: October 28, 2026 · Developer: Soul Serenity Zone (Morocco) · Contact: <a href="mailto:87yassine1@gmail.com">87yassine1@gmail.com</a></p>
 
         <h2>Disclaimer</h2>
         <p>Roya offers approximate, AI-assisted dream interpretations. They are not religious rulings, knowledge of the unseen, or psychological or medical advice.</p>
 
         <h2>1. Data you enter</h2>
         <ul>
-            <li><strong>Dream text:</strong> sent over an encrypted connection to OpenAI to generate the interpretation. We do not send your name or email with it. OpenAI keeps API requests for up to 30 days for abuse monitoring and, under its API terms, does not use them to train its models.</li>
+            <li><strong>Dream text:</strong> sent over an encrypted connection to our server (Cloudflare Workers), which passes it straight to OpenAI to generate the interpretation and does not store it. We do not send your name or email with it. OpenAI keeps API requests for up to 30 days for abuse monitoring and, under its API terms, does not use them to train its models.</li>
             <li><strong>Voice input:</strong> only when you tap the microphone, your device's speech recognition service (such as Google) turns your voice into text. The app receives the text only and does not store the audio.</li>
             <li><strong>Account (optional):</strong> if you register, we store your name, email, gender and age group in Firebase (Google). Your password is handled by Firebase Authentication and we never see it. You can use the app without an account.</li>
         </ul>
@@ -105,11 +106,12 @@
             <li><strong>Firebase Analytics:</strong> usage events such as interpreter type, mood, language and text length, never the dream text itself.</li>
             <li><strong>Firebase Crashlytics and Performance Monitoring:</strong> crash reports, device and performance information.</li>
             <li><strong>Firebase Remote Config:</strong> to fetch interpreter settings.</li>
+            <li><strong>Hashed device identifier:</strong> the app sends our server a code derived from your device's Android ID using SHA-256, which cannot be turned back into the original ID. With it we store only how many interpretations were used that day and any credit earned by watching ads, to apply the free daily limit and prevent abuse. We also use Firebase App Check (Play Integrity) to confirm that requests come from the genuine app.</li>
             <li><strong>Google AdMob:</strong> advertising ID, IP address (approximate location), ad interactions and diagnostics, to show and measure ads and prevent fraud. Your dream text is never sent to AdMob.</li>
         </ul>
 
         <h2>4. Who we share data with</h2>
-        <p>We do not sell your data. We only use the service providers listed above: OpenAI (<a href="https://openai.com/policies/privacy-policy">privacy policy</a>) and Google Firebase and AdMob (<a href="https://policies.google.com/privacy">Google privacy policy</a>). We may disclose data when required by law.</p>
+        <p>We do not sell your data. We only use the service providers listed above: OpenAI (<a href="https://openai.com/policies/privacy-policy">privacy policy</a>), Cloudflare, which hosts our server (<a href="https://www.cloudflare.com/privacypolicy/">privacy policy</a>), and Google Firebase and AdMob (<a href="https://policies.google.com/privacy">Google privacy policy</a>). We may disclose data when required by law.</p>
 
         <h2>5. Ads and consent</h2>
         <p>The app shows ads. Where consent is required (for example in the EU and UK) we ask for it before showing personalized ads. You can reset or delete your advertising ID in your phone's Settings → Google → Ads.</p>
